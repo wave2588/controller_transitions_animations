@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40C2A5951C19DCA80084F038 /* BBThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C2A5941C19DCA80084F038 /* BBThreeViewController.m */; };
 		40C6BB731C185CA9001B7E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB721C185CA9001B7E5D /* main.m */; };
 		40C6BB761C185CA9001B7E5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB751C185CA9001B7E5D /* AppDelegate.m */; };
 		40C6BB7E1C185CA9001B7E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C6BB7D1C185CA9001B7E5D /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40C2A5931C19DCA80084F038 /* BBThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBThreeViewController.h; sourceTree = "<group>"; };
+		40C2A5941C19DCA80084F038 /* BBThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBThreeViewController.m; sourceTree = "<group>"; };
 		40C6BB6E1C185CA9001B7E5D /* FadeAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FadeAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C6BB721C185CA9001B7E5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40C6BB741C185CA9001B7E5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				40C6BB8C1C185D4E001B7E5D /* BBFirstViewController.m */,
 				40C6BB8E1C185D5E001B7E5D /* BBSecondViewController.h */,
 				40C6BB8F1C185D5E001B7E5D /* BBSecondViewController.m */,
+				40C2A5931C19DCA80084F038 /* BBThreeViewController.h */,
+				40C2A5941C19DCA80084F038 /* BBThreeViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				40C6BB901C185D5E001B7E5D /* BBSecondViewController.m in Sources */,
 				40C6BB731C185CA9001B7E5D /* main.m in Sources */,
 				40C6BB931C185D8C001B7E5D /* BBBaseNavigationController.m in Sources */,
+				40C2A5951C19DCA80084F038 /* BBThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +350,7 @@
 				40C6BB871C185CA9001B7E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

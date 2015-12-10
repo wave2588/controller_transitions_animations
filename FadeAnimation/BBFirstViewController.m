@@ -32,7 +32,7 @@
 -(UIButton *)nextBtn{
     if (!_nextBtn) {
         _nextBtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 30)];
-        [_nextBtn setTitle:@"点我点我" forState:UIControlStateNormal];
+        [_nextBtn setTitle:@"-->第二个" forState:UIControlStateNormal];
         _nextBtn.backgroundColor = [UIColor redColor];
         [_nextBtn addTarget:self action:@selector(clickNextBtn) forControlEvents:UIControlEventTouchUpInside];
     }

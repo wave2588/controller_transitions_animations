@@ -10,6 +10,7 @@
 #import "BBFirstViewController.h"
 #import "BBSecondViewController.h"
 #import "BBFadeAnimation.h"
+#import "BBThreeViewController.h"
 
 typedef id <UIViewControllerAnimatedTransitioning> (^animation)(void);
 
@@ -50,6 +51,20 @@ static void inline registerTransition(Class fromViewControllerClass, Class toVie
         });
         
         registerTransition([BBSecondViewController class], [BBFirstViewController class], ^id<UIViewControllerAnimatedTransitioning>{
+            BBFadeAnimation *animationController = [[BBFadeAnimation alloc]init];
+            animationController.duration = 0.5f;
+            animationController.reverse = YES;
+            return animationController;
+        });
+        
+        registerTransition([BBSecondViewController class], [BBThreeViewController class], ^id<UIViewControllerAnimatedTransitioning>{
+            BBFadeAnimation *animationController = [[BBFadeAnimation alloc]init];
+            animationController.duration = 0.5f;
+            animationController.reverse = NO;
+            return animationController;
+        });
+        
+        registerTransition([BBThreeViewController class], [BBSecondViewController class], ^id<UIViewControllerAnimatedTransitioning>{
             BBFadeAnimation *animationController = [[BBFadeAnimation alloc]init];
             animationController.duration = 0.5f;
             animationController.reverse = YES;
