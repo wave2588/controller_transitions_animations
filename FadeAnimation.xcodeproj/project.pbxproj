@@ -20,9 +20,11 @@
 		40C6BB961C185F64001B7E5D /* BBProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB951C185F64001B7E5D /* BBProtocolView.m */; };
 		40C6BB991C185FF1001B7E5D /* BBRegulateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB981C185FF1001B7E5D /* BBRegulateAnimation.m */; };
 		40C6BB9C1C1860B9001B7E5D /* BBFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB9B1C1860B9001B7E5D /* BBFadeAnimation.m */; };
+		9FB87973E28657365012DA43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A36E995257B462CABFE24807 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3AA911AEC018E35C9C14AA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		406A7C211CEC707800AF8166 /* BBMoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMoveAnimation.h; sourceTree = "<group>"; };
 		406A7C221CEC707800AF8166 /* BBMoveAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMoveAnimation.m; sourceTree = "<group>"; };
 		406A7C251CEC721E00AF8166 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		40C6BB981C185FF1001B7E5D /* BBRegulateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRegulateAnimation.m; sourceTree = "<group>"; };
 		40C6BB9A1C1860B9001B7E5D /* BBFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFadeAnimation.h; sourceTree = "<group>"; };
 		40C6BB9B1C1860B9001B7E5D /* BBFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFadeAnimation.m; sourceTree = "<group>"; };
+		7AE9C1CEA08DB4DD97F2963A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A36E995257B462CABFE24807 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB87973E28657365012DA43 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206E2C0D28BC59491AA1774E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A3AA911AEC018E35C9C14AA /* Pods.debug.xcconfig */,
+				7AE9C1CEA08DB4DD97F2963A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		406A7C241CEC720C00AF8166 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +89,8 @@
 			children = (
 				40C6BB701C185CA9001B7E5D /* FadeAnimation */,
 				40C6BB6F1C185CA9001B7E5D /* Products */,
+				206E2C0D28BC59491AA1774E /* Pods */,
+				C2BD08721475F688A6342F24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +105,9 @@
 		40C6BB701C185CA9001B7E5D /* FadeAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				40C6BB8A1C185D2C001B7E5D /* ViewController */,
+				40C6BB8A1C185D2C001B7E5D /* Controllers */,
 				40C6BB891C185D25001B7E5D /* BaseAnimation */,
-				40C6BB881C185CBD001B7E5D /* FadeAnimation */,
+				40C6BB881C185CBD001B7E5D /* JumpControllerAnimations */,
 				406A7C241CEC720C00AF8166 /* Tools */,
 				40C6BB741C185CA9001B7E5D /* AppDelegate.h */,
 				40C6BB751C185CA9001B7E5D /* AppDelegate.m */,
@@ -111,7 +127,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		40C6BB881C185CBD001B7E5D /* FadeAnimation */ = {
+		40C6BB881C185CBD001B7E5D /* JumpControllerAnimations */ = {
 			isa = PBXGroup;
 			children = (
 				40C6BB9A1C1860B9001B7E5D /* BBFadeAnimation.h */,
@@ -119,7 +135,7 @@
 				406A7C211CEC707800AF8166 /* BBMoveAnimation.h */,
 				406A7C221CEC707800AF8166 /* BBMoveAnimation.m */,
 			);
-			name = FadeAnimation;
+			name = JumpControllerAnimations;
 			sourceTree = "<group>";
 		};
 		40C6BB891C185D25001B7E5D /* BaseAnimation */ = {
@@ -135,7 +151,7 @@
 			name = BaseAnimation;
 			sourceTree = "<group>";
 		};
-		40C6BB8A1C185D2C001B7E5D /* ViewController */ = {
+		40C6BB8A1C185D2C001B7E5D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				40C6BB8B1C185D4E001B7E5D /* BBFirstViewController.h */,
@@ -145,7 +161,15 @@
 				40C2A5931C19DCA80084F038 /* BBThreeViewController.h */,
 				40C2A5941C19DCA80084F038 /* BBThreeViewController.m */,
 			);
-			name = ViewController;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C2BD08721475F688A6342F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A36E995257B462CABFE24807 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40C6BB851C185CA9001B7E5D /* Build configuration list for PBXNativeTarget "FadeAnimation" */;
 			buildPhases = (
+				920BFF495B2F29EBDE4E8430 /* Check Pods Manifest.lock */,
 				40C6BB6A1C185CA9001B7E5D /* Sources */,
 				40C6BB6B1C185CA9001B7E5D /* Frameworks */,
 				40C6BB6C1C185CA9001B7E5D /* Resources */,
+				3A8F7268EA815FCCD9CD5139 /* Embed Pods Frameworks */,
+				A25EDDD9244B9DD1D621B2B3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A8F7268EA815FCCD9CD5139 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		920BFF495B2F29EBDE4E8430 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A25EDDD9244B9DD1D621B2B3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40C6BB6A1C185CA9001B7E5D /* Sources */ = {
@@ -329,6 +404,7 @@
 		};
 		40C6BB861C185CA9001B7E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3AA911AEC018E35C9C14AA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -345,6 +421,7 @@
 		};
 		40C6BB871C185CA9001B7E5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE9C1CEA08DB4DD97F2963A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

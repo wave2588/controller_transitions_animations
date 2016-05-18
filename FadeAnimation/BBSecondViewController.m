@@ -9,6 +9,8 @@
 #import "BBSecondViewController.h"
 #import "BBThreeViewController.h"
 
+#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
+
 @interface BBSecondViewController ()
 
 @property (nonatomic,strong) UIButton *nextBtn;
@@ -16,6 +18,11 @@
 @end
 
 @implementation BBSecondViewController
+
+-(BOOL)fd_interactivePopDisabled{
+
+    return YES;
+}
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
