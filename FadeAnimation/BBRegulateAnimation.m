@@ -12,6 +12,7 @@
 #import "BBMoveController.h"
 
 //动画
+#import "BBBaseAnimation.h"
 #import "BBFadeAnimation.h"
 #import "BBMoveAnimation.h"
 

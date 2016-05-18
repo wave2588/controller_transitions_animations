@@ -1,5 +1,5 @@
 //
-//  BBMoveAnimation.h
+//  BBBaseAnimation.h
 //  FadeAnimation
 //
 //  Created by wave on 16/5/18.
@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "BBBaseAnimation.h"
 
-@interface BBMoveAnimation : BBBaseAnimation
+@interface BBBaseAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
+//动画时间
+@property (nonatomic, assign) CGFloat duration;
 
 @end

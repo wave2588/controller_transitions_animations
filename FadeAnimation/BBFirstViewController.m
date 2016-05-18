@@ -33,7 +33,7 @@
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
+
     self.tableView.tableFooterView = [[UIView alloc]init];
     
     [self.view addSubview:self.tableView];
@@ -51,6 +51,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = self.titileArray[indexPath.row];
     
     return cell;

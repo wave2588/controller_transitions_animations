@@ -1,5 +1,5 @@
 //
-//  BBMoveAnimation.h
+//  BBDependAnimation.h
 //  FadeAnimation
 //
 //  Created by wave on 16/5/18.
@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "BBBaseAnimation.h"
 
-@interface BBMoveAnimation : BBBaseAnimation
-
+@interface BBDependAnimation : NSObject
 
 @end

@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "BBBaseAnimation.h"
 
-@interface BBFadeAnimation : NSObject <UIViewControllerAnimatedTransitioning>
-@property (nonatomic, assign) CGFloat duration;
+@interface BBFadeAnimation : BBBaseAnimation 
+
 @property(nonatomic, assign) BOOL reverse;
+
 @end

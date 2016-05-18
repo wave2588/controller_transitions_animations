@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40619A521CEC81E10092FE09 /* BBFadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40619A511CEC81E10092FE09 /* BBFadeController.m */; };
 		40619A551CEC83480092FE09 /* BBMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40619A541CEC83480092FE09 /* BBMoveController.m */; };
+		40619A581CEC86270092FE09 /* BBDependAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40619A571CEC86270092FE09 /* BBDependAnimation.m */; };
+		40619A5B1CEC86430092FE09 /* BBBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40619A5A1CEC86430092FE09 /* BBBaseAnimation.m */; };
 		406A7C231CEC707800AF8166 /* BBMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 406A7C221CEC707800AF8166 /* BBMoveAnimation.m */; };
 		406A7C271CEC721E00AF8166 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 406A7C261CEC721E00AF8166 /* UIView+Frame.m */; };
 		40C6BB731C185CA9001B7E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB721C185CA9001B7E5D /* main.m */; };
@@ -29,6 +31,10 @@
 		40619A511CEC81E10092FE09 /* BBFadeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFadeController.m; sourceTree = "<group>"; };
 		40619A531CEC83480092FE09 /* BBMoveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMoveController.h; sourceTree = "<group>"; };
 		40619A541CEC83480092FE09 /* BBMoveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMoveController.m; sourceTree = "<group>"; };
+		40619A561CEC86270092FE09 /* BBDependAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDependAnimation.h; sourceTree = "<group>"; };
+		40619A571CEC86270092FE09 /* BBDependAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDependAnimation.m; sourceTree = "<group>"; };
+		40619A591CEC86430092FE09 /* BBBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBaseAnimation.h; sourceTree = "<group>"; };
+		40619A5A1CEC86430092FE09 /* BBBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBaseAnimation.m; sourceTree = "<group>"; };
 		406A7C211CEC707800AF8166 /* BBMoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMoveAnimation.h; sourceTree = "<group>"; };
 		406A7C221CEC707800AF8166 /* BBMoveAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMoveAnimation.m; sourceTree = "<group>"; };
 		406A7C251CEC721E00AF8166 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -130,10 +136,14 @@
 		40C6BB881C185CBD001B7E5D /* JumpControllerAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				40619A591CEC86430092FE09 /* BBBaseAnimation.h */,
+				40619A5A1CEC86430092FE09 /* BBBaseAnimation.m */,
 				40C6BB9A1C1860B9001B7E5D /* BBFadeAnimation.h */,
 				40C6BB9B1C1860B9001B7E5D /* BBFadeAnimation.m */,
 				406A7C211CEC707800AF8166 /* BBMoveAnimation.h */,
 				406A7C221CEC707800AF8166 /* BBMoveAnimation.m */,
+				40619A561CEC86270092FE09 /* BBDependAnimation.h */,
+				40619A571CEC86270092FE09 /* BBDependAnimation.m */,
 			);
 			name = JumpControllerAnimations;
 			sourceTree = "<group>";
@@ -207,7 +217,7 @@
 				TargetAttributes = {
 					40C6BB6D1C185CA9001B7E5D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 5745T6MZ43;
+						DevelopmentTeam = 334F27LL3L;
 					};
 				};
 			};
@@ -301,9 +311,11 @@
 				40C6BB761C185CA9001B7E5D /* AppDelegate.m in Sources */,
 				40C6BB8D1C185D4E001B7E5D /* BBFirstViewController.m in Sources */,
 				406A7C231CEC707800AF8166 /* BBMoveAnimation.m in Sources */,
+				40619A5B1CEC86430092FE09 /* BBBaseAnimation.m in Sources */,
 				40C6BB731C185CA9001B7E5D /* main.m in Sources */,
 				40C6BB931C185D8C001B7E5D /* BBBaseNavigationController.m in Sources */,
 				406A7C271CEC721E00AF8166 /* UIView+Frame.m in Sources */,
+				40619A581CEC86270092FE09 /* BBDependAnimation.m in Sources */,
 				40619A521CEC81E10092FE09 /* BBFadeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,10 +17,6 @@
 
 @implementation BBMoveAnimation
 
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext{
-    return self.duration;
-}
-
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
     self.transitionContext = transitionContext;
     
