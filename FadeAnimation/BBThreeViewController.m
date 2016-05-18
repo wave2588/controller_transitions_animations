@@ -14,6 +14,12 @@
 
 @implementation BBThreeViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"第三层:%@",self.navigationController.viewControllers);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 

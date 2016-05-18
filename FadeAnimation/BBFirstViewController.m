@@ -17,6 +17,12 @@
 
 @implementation BBFirstViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"第一层:%@",self.navigationController.viewControllers);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 

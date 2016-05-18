@@ -17,6 +17,12 @@
 
 @implementation BBSecondViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"第二层:%@",self.navigationController.viewControllers);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
