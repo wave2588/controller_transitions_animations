@@ -7,11 +7,14 @@
 //
 
 #import "BBFirstViewController.h"
-#import "BBSecondViewController.h"
+#import "BBFadeController.h"
+#import "BBMoveController.h"
 
-@interface BBFirstViewController ()
+@interface BBFirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong) UIButton *nextBtn;
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSArray *titileArray;
 
 @end
 
@@ -27,23 +30,54 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.nextBtn];
+
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    self.tableView.tableFooterView = [[UIView alloc]init];
+    
+    [self.view addSubview:self.tableView];
 }
 
--(void)clickNextBtn{
-    BBSecondViewController *secondVC = [[BBSecondViewController alloc]init];
-    [self showViewController:secondVC sender:self];
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.titileArray.count;
 }
 
--(UIButton *)nextBtn{
-    if (!_nextBtn) {
-        _nextBtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 30)];
-        [_nextBtn setTitle:@"-->第二个" forState:UIControlStateNormal];
-        _nextBtn.backgroundColor = [UIColor redColor];
-        [_nextBtn addTarget:self action:@selector(clickNextBtn) forControlEvents:UIControlEventTouchUpInside];
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    return _nextBtn;
+    
+    cell.textLabel.text = self.titileArray[indexPath.row];
+    
+    return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        BBFadeController *vc = [[BBFadeController alloc]init];
+        [self showViewController:vc sender:self];
+    }else if (indexPath.row == 1){
+        BBMoveController *vc = [[BBMoveController alloc]init];
+        [self showViewController:vc sender:self];
+    }
+}
+
+-(UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:self.view.frame];
+    }
+    return _tableView;
+}
+
+-(NSArray *)titileArray{
+    if (!_titileArray) {
+        _titileArray = @[@"FadeAnimation",@"MoveAnimation"];
+    }
+    return _titileArray;
+}
 
 @end

@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40619A521CEC81E10092FE09 /* BBFadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40619A511CEC81E10092FE09 /* BBFadeController.m */; };
+		40619A551CEC83480092FE09 /* BBMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40619A541CEC83480092FE09 /* BBMoveController.m */; };
 		406A7C231CEC707800AF8166 /* BBMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 406A7C221CEC707800AF8166 /* BBMoveAnimation.m */; };
 		406A7C271CEC721E00AF8166 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 406A7C261CEC721E00AF8166 /* UIView+Frame.m */; };
-		40C2A5951C19DCA80084F038 /* BBThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C2A5941C19DCA80084F038 /* BBThreeViewController.m */; };
 		40C6BB731C185CA9001B7E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB721C185CA9001B7E5D /* main.m */; };
 		40C6BB761C185CA9001B7E5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB751C185CA9001B7E5D /* AppDelegate.m */; };
 		40C6BB7E1C185CA9001B7E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C6BB7D1C185CA9001B7E5D /* Assets.xcassets */; };
 		40C6BB811C185CA9001B7E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C6BB7F1C185CA9001B7E5D /* LaunchScreen.storyboard */; };
 		40C6BB8D1C185D4E001B7E5D /* BBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB8C1C185D4E001B7E5D /* BBFirstViewController.m */; };
-		40C6BB901C185D5E001B7E5D /* BBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB8F1C185D5E001B7E5D /* BBSecondViewController.m */; };
 		40C6BB931C185D8C001B7E5D /* BBBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB921C185D8C001B7E5D /* BBBaseNavigationController.m */; };
 		40C6BB961C185F64001B7E5D /* BBProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB951C185F64001B7E5D /* BBProtocolView.m */; };
 		40C6BB991C185FF1001B7E5D /* BBRegulateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C6BB981C185FF1001B7E5D /* BBRegulateAnimation.m */; };
@@ -25,12 +25,14 @@
 
 /* Begin PBXFileReference section */
 		2A3AA911AEC018E35C9C14AA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		40619A501CEC81E10092FE09 /* BBFadeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFadeController.h; sourceTree = "<group>"; };
+		40619A511CEC81E10092FE09 /* BBFadeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFadeController.m; sourceTree = "<group>"; };
+		40619A531CEC83480092FE09 /* BBMoveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMoveController.h; sourceTree = "<group>"; };
+		40619A541CEC83480092FE09 /* BBMoveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMoveController.m; sourceTree = "<group>"; };
 		406A7C211CEC707800AF8166 /* BBMoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMoveAnimation.h; sourceTree = "<group>"; };
 		406A7C221CEC707800AF8166 /* BBMoveAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMoveAnimation.m; sourceTree = "<group>"; };
 		406A7C251CEC721E00AF8166 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		406A7C261CEC721E00AF8166 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		40C2A5931C19DCA80084F038 /* BBThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBThreeViewController.h; sourceTree = "<group>"; };
-		40C2A5941C19DCA80084F038 /* BBThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBThreeViewController.m; sourceTree = "<group>"; };
 		40C6BB6E1C185CA9001B7E5D /* FadeAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FadeAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C6BB721C185CA9001B7E5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40C6BB741C185CA9001B7E5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		40C6BB821C185CA9001B7E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C6BB8B1C185D4E001B7E5D /* BBFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFirstViewController.h; sourceTree = "<group>"; };
 		40C6BB8C1C185D4E001B7E5D /* BBFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFirstViewController.m; sourceTree = "<group>"; };
-		40C6BB8E1C185D5E001B7E5D /* BBSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSecondViewController.h; sourceTree = "<group>"; };
-		40C6BB8F1C185D5E001B7E5D /* BBSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSecondViewController.m; sourceTree = "<group>"; };
 		40C6BB911C185D8C001B7E5D /* BBBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBaseNavigationController.h; sourceTree = "<group>"; };
 		40C6BB921C185D8C001B7E5D /* BBBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBaseNavigationController.m; sourceTree = "<group>"; };
 		40C6BB941C185F64001B7E5D /* BBProtocolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBProtocolView.h; sourceTree = "<group>"; };
@@ -156,10 +156,10 @@
 			children = (
 				40C6BB8B1C185D4E001B7E5D /* BBFirstViewController.h */,
 				40C6BB8C1C185D4E001B7E5D /* BBFirstViewController.m */,
-				40C6BB8E1C185D5E001B7E5D /* BBSecondViewController.h */,
-				40C6BB8F1C185D5E001B7E5D /* BBSecondViewController.m */,
-				40C2A5931C19DCA80084F038 /* BBThreeViewController.h */,
-				40C2A5941C19DCA80084F038 /* BBThreeViewController.m */,
+				40619A501CEC81E10092FE09 /* BBFadeController.h */,
+				40619A511CEC81E10092FE09 /* BBFadeController.m */,
+				40619A531CEC83480092FE09 /* BBMoveController.h */,
+				40619A541CEC83480092FE09 /* BBMoveController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -296,15 +296,15 @@
 			files = (
 				40C6BB9C1C1860B9001B7E5D /* BBFadeAnimation.m in Sources */,
 				40C6BB991C185FF1001B7E5D /* BBRegulateAnimation.m in Sources */,
+				40619A551CEC83480092FE09 /* BBMoveController.m in Sources */,
 				40C6BB961C185F64001B7E5D /* BBProtocolView.m in Sources */,
 				40C6BB761C185CA9001B7E5D /* AppDelegate.m in Sources */,
 				40C6BB8D1C185D4E001B7E5D /* BBFirstViewController.m in Sources */,
 				406A7C231CEC707800AF8166 /* BBMoveAnimation.m in Sources */,
-				40C6BB901C185D5E001B7E5D /* BBSecondViewController.m in Sources */,
 				40C6BB731C185CA9001B7E5D /* main.m in Sources */,
 				40C6BB931C185D8C001B7E5D /* BBBaseNavigationController.m in Sources */,
-				40C2A5951C19DCA80084F038 /* BBThreeViewController.m in Sources */,
 				406A7C271CEC721E00AF8166 /* UIView+Frame.m in Sources */,
+				40619A521CEC81E10092FE09 /* BBFadeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
