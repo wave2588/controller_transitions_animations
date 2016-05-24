@@ -9,6 +9,7 @@
 #import "BBFirstViewController.h"
 #import "BBFadeController.h"
 #import "BBMoveController.h"
+#import "BBTestViewController.h"
 
 @interface BBFirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -64,6 +65,9 @@
     }else if (indexPath.row == 1){
         BBMoveController *vc = [[BBMoveController alloc]init];
         [self showViewController:vc sender:self];
+    }else if (indexPath.row == 2){
+        BBTestViewController *testVC = [[BBTestViewController alloc]init];
+        [self showViewController:testVC sender:self];
     }
 }
 
@@ -76,7 +80,7 @@
 
 -(NSArray *)titileArray{
     if (!_titileArray) {
-        _titileArray = @[@"FadeAnimation",@"MoveAnimation"];
+        _titileArray = @[@"FadeAnimation",@"MoveAnimation",@"testVC"];
     }
     return _titileArray;
 }
