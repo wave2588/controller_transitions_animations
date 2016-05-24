@@ -6,7 +6,7 @@
 
   //注册动画          A控制器                   B控制器
   		
-  			registerTransition([BBFadeController class], [BBFirstViewController class], ^id<UIViewControllerAnimatedTransitioning>{
+  	registerTransition([BBFadeController class], [BBFirstViewController class], ^id<UIViewControllerAnimatedTransitioning>{
            
             //自定义动画
             BBFadeAnimation *animationController = [[BBFadeAnimation alloc]init];
