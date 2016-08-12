@@ -1,10 +1,13 @@
 PODS:
   - FDFullscreenPopGesture (1.1)
+  - pop (1.0.9)
 
 DEPENDENCIES:
   - FDFullscreenPopGesture
+  - pop
 
 SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
 COCOAPODS: 0.39.0
